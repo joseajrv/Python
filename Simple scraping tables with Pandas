@@ -1,0 +1,5 @@
+import pandas as pd
+
+dfs = pd.read_html('http://www.espn.com.ar/futbol-americano/nfl/equipo/plantel/_/nombre/phi',header=0)
+for df in dfs:
+    print(df)
