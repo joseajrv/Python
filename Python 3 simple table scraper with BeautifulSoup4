@@ -1,8 +1,8 @@
 import bs4 as bs
 import urllib.request
 
-source = urllib.request.urlopen('http://www.espn.com.ar/futbol-americano/nfl/equipo/plantel/_/nombre/phi').read()
-soup = bs.BeautifulSoup(source,'lxml')
+info = urllib.request.urlopen('http://www.espn.com.ar/futbol-americano/nfl/equipo/plantel/_/nombre/phi').read()
+soup = bs.BeautifulSoup(info,'lxml')
 
 table = soup.find('table')
 
